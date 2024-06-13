@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --border: 0.1rem solid #313030f6;
+  --border-radius: 1.2rem;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.content {
+  display: grid;
+  grid-template-areas:
+    ". . . . . ."
+    ". . hero . form . "
+    ". . hero . form  ."
+    ". . . . . ."
+  ;
+  gap: 8.5rem;
+}
+
+main {
+  grid-area: form;
+}
+
+aside {
+  grid-area: hero;
+}
+
+aside img{
+ margin: 5rem 5rem 0;
+}
+
+aside h1 {
+  font-family: "Merriweather", serif;
+  font-size: 5.0rem;
+  font-weight: 700;
+  line-height: 7.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+aside h1 span,
+main h2 span {
+  color: #f0bb1b;
+  font-weight: bold;
+}
+
+main {
+  width: 57rem;
+  height: 45rem;
+  border: var(--border);
+  padding:  4.5rem 5.7rem;
+  border-radius: var(--border-radius);
+}
+
+
+main h2 {
+  max-width: 44rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+
+main.actions {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+main.actions, a{
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-size: 2.4rem;
+  height: 5.5rem;
+  background-color: #E8E2D7;
+  color: black;
+ 
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.0rem;
+}
+
+main header{
+  gap: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+main header i {
+  font-size: 2.4rem;
+  color: #f0bb1b;
+}
+
+.icon{
+  background: none;
+  display: block;
+}
+
+main form{
+  margin-top: 1.6rem;
+}
+
+main form label {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+main form input {
+  width: 470px;
+  height: 3.5rem;
+  background: white;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
